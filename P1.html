@@ -5,51 +5,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lisa Yang</title>
     <link rel="stylesheet" href="P1.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script> 
+        //Hide all .content elements by default except for first child
+        $(document).ready(function(){
+            $(".pages .content").hide();
+            $(".pages .content:first-child").show();
+
+            $("ul li").click(function() {
+                $("ul li").removeClass("active");
+                $(this).addClass("active");
+
+                var current_tab_value = $(this).attr("data-list");
+                $(".pages .content").hide();
+                $("." + current_tab_value).show();
+            })
+        })
+    </script>
 </head>
 <body>
     <script></script>
+    <img class="backgroundimg" src="Assets/u=3446760856,1682940112&fm=26&gp=0.jpg" alt="Backgroundimg">
     <div class="container">
         <div class="navigation">
             <h2>Lisa Yang</h2>
             <div class="tabs">
                 <ul>
-                    <li>Home</li>
-                    <li>Resume</li>
-                    <li>Services</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
+                    <li data-list="tab-1">Home</li>
+                    <li data-list="tab-2">Resume</li>
+                    <li data-list="tab-3">Services</li>
+                    <li data-list="tab-4">Blog</li>
+                    <li data-list="tab-5">Contact</li>
                 </ul>
             </div>
         </div>
-        <div class="card">
-            <div class="card-top">
-                <img class="avatar" src="Assets/pexels-photo-220453.jpeg" alt="avatar">
-                <img class="backImg" src="Assets/Grads20-21_FB_Header_820x360_V12.png" alt="photo">
-                <h1 class="middle">Lisa Yang</h1>
-                <h3>Senier Consultant</h3>
-                <span>twitter, facebook, intagram</span>
+        <div class="pages">
+            <div id="Home" class="content tab-1">
+                <div class="home-top">
+                    <img class="avatar" src="Assets/微信图片_20210105220739.jpg" alt="avatar">
+                    <img class="backImg" src="Assets/Grads20-21_FB_Header_820x360_V12.png" alt="photo">
+                    <h1 class="middle">Lisa Yang</h1>
+                    <h3>Senier Data Engineer</h3>
+                    <span>twitter, facebook, intagram</span>
+                </div>
+                <div class="home-bot">
+                    <div class="description">
+                        <h2>About Me</h2>
+                        <p>Bright and optimistic, Tifa always cheers up the others when they're down. But don't let her looks fool you, she can decimate almost any enemy with her fists..</p>
+                    </div>
+                    <div class="description-list">
+                        <dl>
+                            <dt>Age</dt>
+                            <dd>25</dd>
+                            <dt>Residence</dt>
+                            <dd>Australia</dd>
+                            <dt>Address</dt>
+                            <dd>60 A'Beckett St, Melbourne VIC 3000</dd>
+                            <dt>Email</dt>
+                            <dd>genIus@gmail.com</dd>
+                            <dt>Phone</dt>
+                            <dd>+61 444-738-938</dd>
+                        </dl>
+                    </div>
+                </div>
             </div>
-            <div class="card-bot">
-                <h2>About Me</h2>
-                <p>Bright and optimistic, Tifa always cheers up the others when they're down. But don't let her looks fool you, she can decimate almost any enemy with her fists..</p>
-                <div class="description">
-                    <dl>
-                        <dt>Age</dt>
-                        <dd>25</dd>
-                        <dt>Residence</dt>
-                        <dd>Australia</dd>
-                        <dt>Address</dt>
-                        <dd>60 A'Beckett St, Melbourne VIC 3000</dd>
-                        <dt>Email</dt>
-                        <dd>infool@gmail.com</dd>
-                        <dt>Phone</dt>
-                        <dd>+61 444-738-938</dd>
-                    </dl>
+            <div id="Resume" class="content tab-2">
+                <div class="title">
+                    <h2>Resume</h2>
+                </div>
+                <div class="Edu">
+                    <div class="subtitle">
+                        <div>Education</div>
+                        <div>Experience</div>
+                        </div>
+                    <div class="Edu-1">
+                    <div class="circle">
+                            <div class="c1"></div>
+                            <div class="c2"></div>
+                            <div class="c3"></div>
+                            <div class="c4"></div>
+                            <div class="c5"></div>
+                            <div class="c6"></div>
+                            <div class="l1"></div>
+                            <div class="l2"></div>
+                            <div class="l3"></div>
+                            <div class="l4"></div>
+                            <div class="l5"></div>
+                            <div class="l6"></div>
+                    </div>
+                        <!-- <div class="line"> -->
+                            
+                        <!-- </div> -->
+                        <!-- 绿框 -->
+                        <div class="edu-detail1">
+                            <div class="detail-card">
+                               <div class="card 1">
+                                    <h4>Specialization Course</h4>
+                                    <h6>Apple | Pinapple</h6>
+                                    <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                </div>
+                                <div class="card 2">
+                                    <h4>Specialization Course</h4>
+                                    <h6>Apple | Pinapple</h6>
+                                    <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                </div>
+                                <div class="card 3">
+                                    <h4>Specialization Course</h4>
+                                    <h6>Apple | Pinapple</h6>
+                                    <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 红框 -->
+                        <div class="edu-detail2">
+                            <div class="detail-card">
+                                <div class="card 4">
+                                    <h4>Specialization Course</h4>
+                                    <h6>Apple | Pinapple</h6>
+                                    <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                </div>
+                                <div class="card 5">
+                                    <h4>Specialization Course</h4>
+                                    <h6>Apple | Pinapple</h6>
+                                    <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                </div>
+                                <div class="card 6">
+                                    <h4>Specialization Course</h4>
+                                    <h6>Apple | Pinapple</h6>
+                                    <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allSkills">
+                        <div class="subtitle1">
+                            <div>Design Skills</div>
+                            <div>Coding Skills</div>
+                        </div>
+                        <div class="skills">
+                            <div class="skill design">
+                                <dl>
+                                    <dt><span>Web Design</span></dt>
+                                    <dd>
+                                        <div class="WD">
+                                        <div></div>
+                                        </div>
+                                    </dd>
+                                    <dt><span>Graphic Design</span></dt>
+                                    <dd>
+                                        <div class="GD">
+                                        <div></div>
+                                        </div>
+                                    </dd>
+                                    <dt><span>Print Design</span></dt>
+                                    <dd>
+                                        <div class="PD">
+                                        <div></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="skill coding">
+                                <dl>
+                                    <dt><span>HTML Design</span></dt>
+                                    <dd>
+                                        <div class="HD">
+                                        <div></div>
+                                        </div>
+                                    </dd>
+                                    <dt><span>CSS Design</span></dt>
+                                    <dd>
+                                        <div class="CD">
+                                        <div></div>
+                                        </div>
+                                    </dd>
+                                    <dt><span>Javascript Design</span></dt>
+                                    <dd>
+                                        <div class="JD">
+                                        <div></div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer">
-            <span>© 2017 All rights reserved. Designed by Jiangren</span>
+            <span>© 2021 All rights reserved. Designed by HQ</span>
         </div>
     </div>
 </body>

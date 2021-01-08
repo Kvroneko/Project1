@@ -1,13 +1,25 @@
 *{
     box-sizing: border-box;
 }
-.container{
+.backgroundimg {
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    position: fixed;
+}
+.footer {
+    
+    position: absolute;
+    top: 100%;
+    left: 35%;
+}
+.container {
+    position: relative;
     width: 1000px;
-    height: 1000px;
-    border: 2px red solid;
+    height: 680px;
     transform: translateX(500px);
 }
-.navigation{
+.navigation {
     display: flex;
     justify-content: space-between;
 }
@@ -15,31 +27,328 @@
     display: inline;
     margin: 15px;
 }
-.card-top {
-    position: relative;
+.tab-1 {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
 }
-.card-top h3{
+.home-top {
+    position: relative;
+    height: 350px;
+}
+.home-top h3 {
     position: absolute;
     top: 50%;
     left: 60%;
 }
-.card-top h1 {
+.home-top h1 {
     position: absolute;
     top: 40%;
     left: 60%;
 }
-.card-top span {
+.home-top span {
     position: absolute;
     top: 60%;
     left: 60%;
 }
 .backImg {
     width: 100%;
+    height: 100%;
 }
 .avatar {
     position: absolute;
-    top: 210px;
-    left: 50px;
-    width: 250px;
+    top: 150px;
+    left: 35px;
+    width: 210px;
+    height: 220px;
+    border-radius: 150px;
+}
+.home-bot {
+    display: flex;
+    height: 210px;
+    background-color: #fff;
+}
+.home-bot h2 {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.home-bot p {
+    margin-left: 50px; 
+    margin-top: 20px;
+}
+.description {
+    width: 450px;
     height: 250px;
+}
+//description list inline
+.description-list {
+    margin-left: 100px;
+}
+.description-list dl{
+    margin-top: 40px;
+}
+.description-list dt { 
+    float: left; 
+    clear: left; 
+    width: 100px;   
+} 
+.description-list dt::after { 
+    content: ":"; 
+} 
+.description-list dd { 
+    margin: 0 0 0 100px; 
+    padding: 0 0 0.5em 0;    
+} 
+// 导航栏下划线
+.tabs ul li.active {
+    border-bottom: rgb(33, 130, 241) solid 3px;
+}
+.Edu {
+    width: 1000px;
+    height: 900px;
+    border: steelblue solid 2px;
+    background-color: white;
+}
+.edu-detail1 {
+    width: 450px;
+    height: 540px;
+    border-left: gray solid 2px;
+    position: relative;
+    left: -5px;
+}
+// .detail-card {
+//     width: ;
+// }
+.edu-detail2 {
+    width: 450px;
+    height: 540px;
+    border-left: gray solid 2px;
+    position: relative;
+    left: -20px;
+}
+.card {
+    width: 360px;
+    height: 150px;
+    background-color: white;
+    border-radius: 5px;
+    border-left: steelblue solid 2px;
+    position: relative;
+    left: 50px;
+    box-shadow: 2px 2px 2px 2px #eee;
+}
+.card h4, h6, p {
+    margin-left: 20px;
+}
+.card h4 {
+    padding-top: 14px;
+}
+.tab-2 {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.title {
+    height: 110px;
+    text-align: center;
+    border:  blue solid 2px;
+    background-color: steelblue;
+}
+.title h2 {
+    margin: 37px;
+}
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 400px;
+}
+.Edu-1 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 545px;
+}
+.circle {
+    width: 25px;
+    height: 600px;
+    position: relative;
+}
+.c1, .c2, .c3, .c4, .c5, .c6{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: steelblue solid 2px;  
+    z-index: 9999;
+}
+.c1 {
+    position: absolute;
+    left: 43.5px;
+    top: 25px;
+}
+.c2 {
+    position: absolute;
+    left: 43.5px;
+    top: 200px;
+}
+.c3 {
+    position: absolute;
+    left: 43.5px;
+    top: 370px;
+}
+.c4 {
+    position: absolute;
+    left: 512.5px;
+    top: 25px;
+}
+.c5 {
+    position: absolute;
+    left: 512.5px;
+    top: 200px;
+}
+.c6 {
+    position: absolute;
+    left: 512.5px;
+    top: 370px;
+}
+.l1, .l2, .l3, .l4, .l5, .l6 {
+    border-bottom: steelblue solid 2px;
+    width: 43px;
+    padding: 5px;
+    
+}
+.l1 {
+    position: absolute;
+    left: 63px;
+    top: 23px;
+}
+.l2 {
+    position: absolute;
+    left: 63px;
+    top: 200px;
+}
+.l3 {
+    position: absolute;
+    left: 63px;
+    top: 369px;
+}
+.l4 {
+    position: absolute;
+    left: 533px;
+    top: 23px;
+}
+.l5 {
+    position: absolute;
+    left: 533px;
+    top: 200px;
+}
+.l6 {
+    position: absolute;
+    left: 533px;
+    top: 369px;
+}
+.circle p {
+    font-size: large;
+    font-weight: 600px;
+}
+.skills {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+    border: tomato solid 2px;
+    position: relative;
+}
+.subtitle1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 380px;
+}
+.design {
+    border: tan solid 2px;
+    position: absolute;
+    left: -10px;
+}
+.coding {
+    position: absolute;
+    left: 462px;
+}
+.WD {
+    width: 100px;
+    height: 10px;
+    background-color: teal;
+    margin-left: 20px;
+}
+.WD div {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+}
+.GD {
+    width: 405px;
+    height: 10px;
+    background-color: teal;
+    margin-left: 20px;
+}
+.GD div {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+}
+.PD {
+    width: 100px;
+    height: 10px;
+    background-color: teal;
+    margin-left: 20px;
+}
+.PD div {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+}
+.HD {
+    width: 405px;
+    height: 10px;
+    background-color: teal;
+    margin-left: 20px;
+}
+.HD div {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+}
+.CD {
+    width: 100px;
+    height: 10px;
+    background-color: teal;
+    margin-left: 20px;
+}
+.CD div {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+}
+.JD {
+    width: 100px;
+    height: 10px;
+    background-color: teal;
+    margin-left: 20px;
+}
+.JD div {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+}
+.allSkills span {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+}
+.skills dt, dd {
+    padding: 5px;
 }
