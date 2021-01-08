@@ -120,13 +120,12 @@
 }
 
 .tabs ul li.active {
-  border-bottom: #2182f1 solid 3px;
+  border-bottom: steelblue solid 3px;
 }
 
 .Edu {
   width: 1000px;
   height: 900px;
-  border: steelblue solid 2px;
   background-color: white;
 }
 
@@ -169,26 +168,30 @@
   border-radius: 20px;
   overflow: hidden;
   margin-top: 20px;
+  box-shadow: 2px 2px 2px #ececec;
 }
 
 .title {
-  height: 110px;
+  height: 130px;
   text-align: center;
-  border: blue solid 2px;
   background-color: steelblue;
+  overflow: hidden;
 }
 
 .title h2 {
-  margin: 37px;
+  margin: 50px;
 }
 
 .subtitle {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: 60px;
+  margin-left: 55px;
   margin-right: 400px;
+}
+
+.subtitle div {
+  margin-top: 40px;
 }
 
 .Edu-1 {
@@ -215,37 +218,37 @@
 
 .c1 {
   position: absolute;
-  left: 43.5px;
+  left: 48px;
   top: 25px;
 }
 
 .c2 {
   position: absolute;
-  left: 43.5px;
+  left: 48px;
   top: 200px;
 }
 
 .c3 {
   position: absolute;
-  left: 43.5px;
+  left: 48px;
   top: 370px;
 }
 
 .c4 {
   position: absolute;
-  left: 512.5px;
+  left: 520.5px;
   top: 25px;
 }
 
 .c5 {
   position: absolute;
-  left: 512.5px;
+  left: 520.5px;
   top: 200px;
 }
 
 .c6 {
   position: absolute;
-  left: 512.5px;
+  left: 520.5px;
   top: 370px;
 }
 
@@ -257,37 +260,37 @@
 
 .l1 {
   position: absolute;
-  left: 63px;
+  left: 67px;
   top: 23px;
 }
 
 .l2 {
   position: absolute;
-  left: 63px;
+  left: 67px;
   top: 200px;
 }
 
 .l3 {
   position: absolute;
-  left: 63px;
+  left: 67px;
   top: 369px;
 }
 
 .l4 {
   position: absolute;
-  left: 533px;
+  left: 540px;
   top: 23px;
 }
 
 .l5 {
   position: absolute;
-  left: 533px;
+  left: 540px;
   top: 200px;
 }
 
 .l6 {
   position: absolute;
-  left: 533px;
+  left: 540px;
   top: 369px;
 }
 
@@ -301,7 +304,6 @@
   display: flex;
   justify-content: space-between;
   margin-top: -40px;
-  border: tomato solid 2px;
   position: relative;
 }
 
@@ -310,97 +312,101 @@
   justify-content: space-between;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: 60px;
-  margin-right: 380px;
+  margin-left: 55px;
+  margin-right: 383px;
 }
 
 .design {
-  border: tan solid 2px;
   position: absolute;
   left: -10px;
 }
 
 .coding {
   position: absolute;
-  left: 462px;
+  left: 465px;
 }
 
 .WD {
-  width: 100px;
+  width: 405px;
   height: 10px;
-  background-color: teal;
+  background-color: #d4d4d4;
   margin-left: 20px;
 }
 
-.WD div {
+.WD1 {
   width: 10px;
   height: 10px;
-  background-color: gray;
+  background-color: steelblue;
+  transition: width 10s;
+}
+
+.animate {
+  width: 90%;
 }
 
 .GD {
   width: 405px;
   height: 10px;
-  background-color: teal;
+  background-color: #d4d4d4;
   margin-left: 20px;
 }
 
 .GD div {
-  width: 10px;
+  width: 345px;
   height: 10px;
-  background-color: gray;
+  background-color: steelblue;
 }
 
 .PD {
-  width: 100px;
+  width: 405px;
   height: 10px;
-  background-color: teal;
+  background-color: #d4d4d4;
   margin-left: 20px;
 }
 
 .PD div {
-  width: 10px;
+  width: 305px;
   height: 10px;
-  background-color: gray;
+  background-color: steelblue;
 }
 
 .HD {
   width: 405px;
   height: 10px;
-  background-color: teal;
+  background-color: #d4d4d4;
   margin-left: 20px;
 }
 
 .HD div {
-  width: 10px;
+  width: 375px;
   height: 10px;
-  background-color: gray;
+  background-color: steelblue;
 }
 
 .CD {
-  width: 100px;
+  width: 405px;
   height: 10px;
-  background-color: teal;
+  background-color: #d4d4d4;
   margin-left: 20px;
 }
 
 .CD div {
-  width: 10px;
+  width: 335px;
   height: 10px;
-  background-color: gray;
+  background-color: steelblue;
 }
 
 .JD {
-  width: 100px;
+  width: 405px;
   height: 10px;
-  background-color: teal;
+  background-color: #d4d4d4;
   margin-left: 20px;
 }
 
 .JD div {
-  width: 10px;
+  width: 295px;
   height: 10px;
-  background-color: gray;
+  background-color: steelblue;
 }
 
 .allSkills span {
